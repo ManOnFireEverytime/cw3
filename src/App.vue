@@ -47,7 +47,9 @@
       </div>
     </nav>
 
-    <main>
+    <section class="py-5">
+          <main class="container px-4 px-lg-5 mt-5">
+    
       <component
         :is="currentView"
         :filteredLessons="filteredLessons"
@@ -57,6 +59,7 @@
         @remove-item-from-cart="removeFromCart"
       ></component>
     </main>
+          </section>
   </div>
 </template>
 

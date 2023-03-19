@@ -1,9 +1,5 @@
 <template>
-            <section class="py-5">
-          <div class="container px-4 px-lg-5 mt-5">
-            <div
-              class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
-            >
+            <div >
               <div v-for="item in cart"  :key="item.id" class="col mb-5">
                 <div class="card h-100">
                   <img
@@ -32,9 +28,9 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>        
-          <section>
+
+          <!-- </div>         -->
+          
           <div class="container">
             <div class="py-5 text-center">
               <h2>Checkout</h2>
@@ -87,8 +83,7 @@
               </div>
             </div>
           </div>
-        </section>
-        </section>
+        </div>
 
 </template>
 
@@ -101,7 +96,7 @@ export default {
         phone: "",
     }
   },
-  props: ["filteredLessons", "urls", "cart"],
+  props: ["urls", "cart"],
   methods: {
         // validate name
         validateNameInput() {
